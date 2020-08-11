@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "dev": "webpack"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MGH2558/travel-site.git"
+  },
+  "scripts": {
+    "dev": "webpack"
   },
   "author": "",
   "license": "ISC",
