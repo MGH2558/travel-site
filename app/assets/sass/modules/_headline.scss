@@ -1,0 +1,47 @@
+.headline {
+    color: $mainBlue;
+    font-weight: 300;
+    font-size: 2.3rem;
+    
+    @include atMedium {
+        font-size: 2.875rem;
+    }
+
+    &--light {
+        font-weight: 200;
+    }
+    
+    &--centered {
+        text-align: center;
+    }
+
+    &--colored {
+        color: $mainOrange;
+    }
+
+    &--small {
+        font-size: 1.5rem;
+        
+        @include atMedium {
+            font-size: 1.875rem;
+        }
+    }
+
+    &--narrow {
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--b-margin-small {
+        margin-bottom: .5em;
+    }
+
+    &--b-margin-large {
+        margin-bottom: 1.5em;
+    }
+
+    &--no-t-margin {
+        margin-top: 0;
+    }
+}
