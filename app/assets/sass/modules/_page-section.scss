@@ -9,4 +9,16 @@
         background-color: $mainBlue;
         color: #fff;
     }
+
+    &--testimonials {
+        background-color: midnightblue;
+    }
+
+    &--no-b-padding-until-medium {
+        padding-bottom: 0;
+
+        @include atMedium {
+            padding-bottom: 4.5rem;
+        }
+    }
 }
