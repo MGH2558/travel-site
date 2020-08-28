@@ -19,15 +19,6 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.css$/i,
-            //     use: ['style-loader', 'css-loader', {
-            //         loader: "postcss-loader",
-            //         options: {
-            //             plugins: postCSSPlugins
-            //         }
-            //     }]
-            // },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -44,6 +35,19 @@ module.exports = {
                     'style-loader',
                     'css-loader',
                     'sass-loader'
+                ]
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true,
+                            disable: true
+                        }
+                    }
                 ]
             }
         ]
