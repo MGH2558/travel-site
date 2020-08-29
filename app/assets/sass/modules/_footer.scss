@@ -1,0 +1,25 @@
+.footer {
+    background-color: $mainBlue;
+    
+    &__copyright {
+        font-weight: 200;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+
+        @include atMedium {
+            margin: 1rem;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        margin-left: 0;
+        margin-top: .80rem;
+        
+        @include atMedium {
+            display: inline;
+            margin-left: 2rem;
+        }
+    }
+}
